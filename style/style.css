@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@460;750&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+
+@font-face {
+    font-family: Urbanist;
+    src: url("./font/urbanist/webfont/Urbanist-Regular.woff") format("woff"),
+         url("./font/urbanist/webfont/Urbanist-Regular.woff") format("woff2");
+}
+
+@font-face {
+    font-family: JBMono;
+    src: url("./font/jbmono/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+:root {
+    --bg-col: #ffffff;
+    --bg-active: #f1f2e9;
+    --txt-col: #000000;
+    --band-col: #a17667;
+    --band-txt: #f1f2e9;
+    --pink: #c7917f;
+    --blue: #1f7282;
+    --green: #3a6342;
+    --overlay: #00000030;
+    --filter: unset;
+    --img-bg: #0000;
+}
+
+html, body {
+    background-color: var(--bg-col);
+    color: var(--txt-col);
+    font-family: "Manrope", sans-serif;
+    font-variant-ligatures: contextual; 
+    height: 100%;   
+    margin: 0;
+    padding: 0;
+    /*display: contents;*/
+}
