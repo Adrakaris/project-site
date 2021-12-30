@@ -52,6 +52,10 @@ header.main {
     align-items: center;
 }
 
+header.main.squish {
+    min-height: 300px;
+}
+
 footer {
     background-color: var(--band-col);
     color: var(--band-txt);
