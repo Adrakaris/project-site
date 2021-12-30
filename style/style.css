@@ -1,17 +1,21 @@
+/* FONT FACES */
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@460;750&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
 
 @font-face {
     font-family: Urbanist;
-    src: url("./font/urbanist/webfont/Urbanist-Regular.woff") format("woff"),
-         url("./font/urbanist/webfont/Urbanist-Regular.woff") format("woff2");
+    src: url("../assets/fonts/urbanist/webfont/Urbanist-Regular.woff") format("woff"),
+         url("../assets/fonts/urbanist/webfont/Urbanist-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-family: JBMono;
     src: url("./font/jbmono/JetBrainsMono-Regular.woff2") format("woff2");
 }
+
+/* MAIN */
 
 :root {
     --bg-col: #ffffff;
@@ -37,3 +41,166 @@ html, body {
     padding: 0;
     /*display: contents;*/
 }
+
+/* HEADER FOOTER */
+
+header.main {
+    min-height: 360px;
+    background: linear-gradient(0deg, var(--bg-col) 0%, var(--band-col) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--band-col);
+    color: var(--band-txt);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    box-shadow: 0 50vh 0 50vh var(--band-col);
+}
+
+/* DIVS : MAIN ITEMS */
+
+.header-row {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0 10% 0 10%;
+    /*z-index:10;*/
+}
+
+.cbox {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 840px;/*1200px;*/
+    padding: 5px;
+    /*padding-top: -5px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    overflow-x: auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+.centre {
+    align-items: center;
+}
+
+/* DIVS: BANDS AND COLUMNS */
+
+
+.columns {
+    display: grid;
+    grid-column-gap: 40px;
+}
+
+.columns.two {
+    grid-template-columns: 1fr 1fr;
+}
+
+.columns.three {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* MISCELLANEOUS ATTRIBUTES */
+
+.fadein {
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* HEADERS */
+
+h1 {
+    font-family: Urbanist;
+    font-size: 36pt;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: Urbanist;
+    font-size: 24pt;
+    letter-spacing: 2px;
+    /*padding: 5px;*/
+}
+
+h3 {
+    font-family: Urbanist;
+    font-size: 20pt;
+    letter-spacing: 2px;
+    /*padding: 3px;*/
+}
+
+h3.c {
+    font-family: Urbanist;
+    font-size: 20pt;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* TEXT */
+
+p.subheading {
+    font-family: Urbanist;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: -30px;
+}
+
+p.small {
+    font-size: 8pt;
+}
+
+p.large {
+    font-size: 14pt;
+}
+
+p.grey {
+    color: gray;
+}
+
+p.ra {
+    text-align: right;
+}
+
+p.centre {
+    text-align: center;
+}
+
+/* BUTTONS */
+
+button.nav {
+    font-family: Urbanist;
+    text-align: center;
+    margin-top: -30px;
+    color: var(--txt-col);
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+button.nav:hover {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+
