@@ -212,8 +212,8 @@ a.nav {
     text-align: center;
     letter-spacing: 1px;
     margin-top: -30px;
-    color: var(--band-txt);
-    font-size: 8;
+    color: var(--txt-col);
+    font-size: 16px;
     text-decoration: none;
     letter-spacing: 2px;
     transition: text-shadow 0.3s ease-in-out;
@@ -303,4 +303,19 @@ button.nav:hover {
     text-decoration: none;
 }
 
+/* IMAGES AND FIGURES */
 
+figcaption {
+    text-align: center;
+}
+
+figcaption.i {
+    font-style: italic;
+}
+
+figure > img {
+    margin: 0 auto; 
+    display: block; 
+    width: 100%; 
+    max-width: min-content;
+}
