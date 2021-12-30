@@ -95,8 +95,27 @@ footer {
     align-items: center;
 }
 
+.horizflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 /* DIVS: BANDS AND COLUMNS */
 
+.colourband {
+    background-color: var(--band-col);
+    color: var(--band-txt);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    
+    text-align: center;
+}
 
 .columns {
     display: grid;
@@ -114,7 +133,7 @@ footer {
 /* MISCELLANEOUS ATTRIBUTES */
 
 .fadein {
-    animation: fadein 0.5s;
+    animation: fadein 0.8s;
 }
 
 @keyframes fadein {
@@ -182,6 +201,46 @@ p.centre {
     text-align: center;
 }
 
+/* LINKS */
+
+a.nav {
+    font-family: Urbanist;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: -30px;
+    color: var(--band-txt);
+    font-size: 8;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+a.nav:hover {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+a {
+    color: var(--pink);
+    text-decoration: none;
+}
+
+a:hover:not(.nav) {
+    text-decoration: underline;
+}
+
+a.text:hover {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+a.white {
+    color: var(--band-txt);
+}
+
+a.black {
+    color: var(--txt-col);
+}
+
 /* BUTTONS */
 
 button.nav {
@@ -201,6 +260,33 @@ button.nav {
 
 button.nav:hover {
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.buttonwrapper {
+    padding: 5px;
+    background-color: var(--band-col);
+    color: var(--band-txt);
+    font-family: "Manrope";
+    text-align: center;
+    margin: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.buttonwrapper:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.buttonwrapper a {
+    color: var(--band-txt);
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonwrapper > a:hover {
+    text-decoration: none;
 }
 
 
