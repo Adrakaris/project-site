@@ -1,0 +1,23 @@
+{"projects": [
+    {
+        "title": "Small",
+        "language": "Python",
+        "description": "Small python projects I made a few years ago, for fun, in one collection.",
+        "image": "https://github.com/Adrakaris/small/raw/master/-images/bigtitle.png",
+        "link": "https://github.com/Adrakaris/small"
+    },
+    {
+        "title": "Spigot Sign Editor",
+        "language": "Java",
+        "description": "A simple sign editor plugin made for Minecraft 1.16+",
+        "image": "https://www.spigotmc.org/data/resource_icons/82/82969.jpg?1597960457",
+        "link": "https://github.com/Adrakaris/spigot-signedit"
+    },
+    {
+        "title": "Robot Maze",
+        "language": "Java",
+        "description": "An AI that solves mazes (CS118 Coursework)",
+        "image": "../assets/images/robotmaze.png",
+        "link": "../robotMaze/"
+    }
+]}
