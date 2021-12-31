@@ -6,7 +6,14 @@
     <link rel="stylesheet" type="text/css" href="./style/style.css" media="all">
     <link rel="shortcut icon" href="./assets/images/DragonIcon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script>
+        window.onload = function() {
+            if(!window.location.hash) {
+                window.location = window.location + '#loaded';
+                window.location.reload();
+            }
+        }
+    </script>
     <title>Yijun Hu (Projects)</title>
 </head>
 <body>
@@ -66,6 +73,9 @@
                 }
     
                 div#genprojects div.visible {
+                    opacity: 1;
+                }
+                div#genprojects div.visible div {
                     opacity: 1;
                 }
             </style>

@@ -19,5 +19,12 @@
         "description": "An AI that solves mazes (CS118 Coursework)",
         "image": "../assets/images/robotmaze.png",
         "link": "../robotMaze/"
+    },
+    {
+        "title": "Large Arithmetic Collider",
+        "language": "Haskell",
+        "description": "A solver written in Haskell for an arithmetic game (CS141 Coursework)",
+        "image": "../assets/images/lac.svg",
+        "link": "../lac/"
     }
 ]}

@@ -1,7 +1,33 @@
+var MW = 300
+var MH = 200
+
+
+function scaleWidthHeight(imgElem) {
+    let natWid = imgElem.naturalWidth;
+    let natHei = imgElem.naturalHeight;
+    let resizeFactorWidth = MW / natWid;
+    
+    // resize by width factor, if the image is wider than MH then resize by height as well
+    let wid = natWid * resizeFactorWidth
+    let hei = natHei * resizeFactorWidth
+    if (hei > MH) {
+        let resizeFactorHeight = MH / hei;
+        wid *= resizeFactorHeight;
+        hei *= resizeFactorHeight;
+    }
+    imgElem.width = wid;
+    imgElem.height = hei;
+    // if the height is less than MH, add a margin to top and bottom
+    if (hei < MH) {
+        let finalMargin = (MH - hei)/2;
+        imgElem.style.marginTop = `${finalMargin}px`;
+        imgElem.style.marginBottom = `${finalMargin}px`;
+    }
+}
+
 
 function addProjects(projects) {
-    var MW = 300
-    var MH = 200
+    
 
     let addList = document.getElementById("genprojects");
     projects.reverse().forEach(project => {
@@ -15,27 +41,13 @@ function addProjects(projects) {
         pa.setAttribute("href", project["link"]);
         pdiv.appendChild(pa);
         
-        
         let pimg = document.createElement("img");
         pimg.src = project["image"];
         pimg.style.maxWidth = `${MW}px`;
         pimg.style.maxHeight = `${MH}px`;
         pimg.style.imageRendering = "pixelated";
         pimg.style.resizeMode = "contain";
-        console.log(`${pimg.width}, ${pimg.height}`);
-        let resizeFactor;
-        let resizeheight;
-        if (pimg.width > MW) {
-            resizeFactor = pimg.width / MW;  // new div old
-            resizeheight = pimg.height / resizeFactor;
-        } else {
-            resizeheight = pimg.height;
-
-        }
-        console.log(resizeheight);
-        let finalMargin = (MH - Math.min(MH, resizeheight));
-        pimg.style.marginBottom = `${finalMargin/2}px`;
-        pimg.style.marginTop = `${finalMargin/2}px`;
+        scaleWidthHeight(pimg);
         pa.appendChild(pimg);
         
 
@@ -67,6 +79,7 @@ function addProjects(projects) {
         setTimeout(() => {
             projn.classList.add("visible");
         }, 500 * i);
+        
         i++
     })
     
