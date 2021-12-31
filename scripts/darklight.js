@@ -1,6 +1,8 @@
 // themes
 
-var light = {
+// NOTE: light and dark have been switched around, because it is nicer to have dark theme by default
+
+var dark = {
     "--bg-col": "#ffffff",
     "--bg-active": "#f1f2e9",
     "--txt-col": "#000000",
@@ -14,7 +16,7 @@ var light = {
     "--img-bg": "#0000"
 }
 
-var dark = {  
+var light = {  
     "--bg-col": "#2e2e2e",
     "--bg-active": "#333333",
     "--txt-col": "#eaeaea",

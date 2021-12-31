@@ -319,3 +319,26 @@ figure > img {
     width: 100%; 
     max-width: min-content;
 }
+
+/* TABLES */
+
+td, th {
+    padding: 5px;
+}
+
+tr.sbord {
+    border-bottom: 1px solid var(--band-col);
+}
+
+th.ebord, td.ebord {
+    border-right: 1px solid var(--band-col);
+}
+
+table {
+    border-collapse: collapse;
+    align-self: center;
+}
+
+table.centre {
+    text-align: center;
+}

@@ -5,6 +5,7 @@ var MH = 200
 function scaleWidthHeight(imgElem) {
     let natWid = imgElem.naturalWidth;
     let natHei = imgElem.naturalHeight;
+    console.log(natWid, natHei);
     let resizeFactorWidth = MW / natWid;
     
     // resize by width factor, if the image is wider than MH then resize by height as well
@@ -47,7 +48,10 @@ function addProjects(projects) {
         pimg.style.maxHeight = `${MH}px`;
         pimg.style.imageRendering = "pixelated";
         pimg.style.resizeMode = "contain";
-        scaleWidthHeight(pimg);
+        // scaleWidthHeight(pimg);
+        pimg.onload = function() {
+            scaleWidthHeight(this);
+        };
         pa.appendChild(pimg);
         
 

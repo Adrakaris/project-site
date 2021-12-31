@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../assets/images/DragonIcon.png" type="image/png">
+    <title>Template Title</title>
+</head>
+<body>
+    <header class="main squish">
+        <div class="horizflex" style="flex-direction: row-reverse; justify-content: space-between; width: 98%;">
+            <div style="padding: 10px;">
+                <button class="nav" id="darkmode">Dark Mode</button>
+                <script type="text/javascript" src="../scripts/darklight.js"></script>
+            </div>
+
+            <div style="padding: 10px;">
+                <a href="../" class="nav">Home</a>
+            </div>
+        </div>
+        <div class="cbox">
+            <h1>Large Arithmetic Collider</h1>
+            <!-- <p class="subheading"></p> -->
+        </div>
+    </header>
+
+    <div class="colourband">
+        <h2>Overview</h2>
+    </div>
+
+    <div class="cbox">
+        <figure>
+            <img src="../assets/images/lac.svg" alt="Cover page" style="max-width: 400px;">
+        </figure>
+        <p>
+            The Large Arithmetic Collider (LAC) is a maths game with simple rules.
+        </p>
+        <p>
+            You are given a grid of numbers, which may be positive or negative, which may be off or on. Attached to each of the columns and rows is a target value, which the row or column must sum to. Furthermore, rows and columns can be rotated, kind of like a rubiks cube, with the number rotated off the board looping back to the other end. 
+        </p>
+        <p>
+            The goal is to rotate the columns and rows, and then turn on or off cells, such that all the row and column sum targets are satisfied. 
+        </p>
+        <p>
+            A simple version of the game is where the grid consists of only a single row, such as the one shown on the cover image:
+        </p>
+        <table class="centre">
+            <tr class="sbord">
+                <td class="ebord"></td>
+                <td>-3</td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td class="ebord">20</td>
+                <td>14</td>
+                <td>-3</td>
+                <td>9</td>
+                <td>3</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>
+            To solve this, we would have to rotate the single row into the position shown below, and turn on the cells for 14, -3, and 9. 
+        </p>
+        <table class="centre">
+            <tr class="sbord">
+                <td class="ebord"></td>
+                <td>-3</td>
+                <td>9</td>
+                <td>0</td>
+                <td>0</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td class="ebord">20</td>
+                <td>-3</td>
+                <td>9</td>
+                <td>3</td>
+                <td>1</td>
+                <td>14</td>
+            </tr>
+        </table>
+
+        <p>
+            Of course, it is not as easy as just one row, you could get grids - and very large ones at that. Thus, this is certainly not trivial to solve by hand, and not particularly trivial to brute force by computer either. 
+        </p>
+    </div>
+
+    <div class="colourband">
+        <h2>Solver</h2>
+    </div>
+
+    <div class="cbox">
+        <p>
+            Now that we know the task, the goal of the assignment was to make a solver in Haskell, which could, in reasonable time, either solve the problem, or say it cannot be solved. Haskell is a (lazy, statically typed,) pure, functional langauge, which makes programming in it much different from any imperative language, and whilst some things were exceedingly difficult (No print statements in the middle of execution) Haskell allows for some very elegant functions with high level abstractions. On top of that, it was often the case that once all type errors were resolved and the program compiled, it worked, first time.
+        </p>
+        
+
+        <p class="grey">
+            Since this is a coursework, source code is not available.
+        </p>
+    </div>
+    
+
+    <footer>
+        <div class="cbox">
+            <div class="columns two" id="genfooter">
+            </div>
+            <script src="../scripts/footer.js" type="text/javascript"></script>
+        </div>
+    </footer>
+</body>
+</html>
