@@ -63,10 +63,12 @@ toggle.addEventListener("click", function() {
     // we need to check if it's dark or light
     if (indicator == "dark") {
         indicator = "light";
+        toggle.innerText = "Light Mode";
         localStorage.setItem("theme", "light");
         setTheme(light);
     } else {
         indicator = "dark";
+        toggle.innerText = "Dark Mode";
         localStorage.setItem("theme", "dark");
         setTheme(dark);
     }

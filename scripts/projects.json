@@ -16,15 +16,22 @@
     {
         "title": "Robot Maze",
         "language": "Java",
-        "description": "An AI that solves mazes (CS118 Coursework)",
+        "description": "An AI that solves mazes (CS118 Programming Coursework)",
         "image": "../assets/images/robotmaze.png",
         "link": "../robotMaze/"
     },
     {
         "title": "Large Arithmetic Collider",
         "language": "Haskell",
-        "description": "A solver written in Haskell for an arithmetic game (CS141 Coursework)",
+        "description": "A solver written in Haskell for an arithmetic game (CS141 Functional Programming Coursework)",
         "image": "../assets/images/lac.svg",
         "link": "../lac/"
+    },
+    {
+        "title": "Waffles",
+        "language": "Java",
+        "description": "A restaurant review website, with hand-written data structures (CS126 Data Structs & Algorithms Coursework)",
+        "image": "../assets/images/waffles-403.png",
+        "link": "../waffles/"
     }
 ]}
