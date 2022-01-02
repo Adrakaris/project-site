@@ -5,7 +5,7 @@ var MH = 200
 function scaleWidthHeight(imgElem) {
     let natWid = imgElem.naturalWidth;
     let natHei = imgElem.naturalHeight;
-    console.log(natWid, natHei);
+    // console.log(natWid, natHei);
     let resizeFactorWidth = MW / natWid;
     
     // resize by width factor, if the image is wider than MH then resize by height as well
@@ -82,7 +82,7 @@ function addProjects(projects) {
     proj.forEach(projn => {
         setTimeout(() => {
             projn.classList.add("visible");
-        }, 500 * i);
+        }, 350 * i);
         
         i++
     })
