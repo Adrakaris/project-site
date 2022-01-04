@@ -33,5 +33,12 @@
         "description": "A restaurant review website, with hand-written data structures (CS126 Data Structs & Algorithms Coursework)",
         "image": "../assets/images/waffles-403.png",
         "link": "../waffles/"
+    },
+    {
+        "title": "Noto Qin Jianzipu",
+        "language": "Font",
+        "description": "A font designed to allow typesetting of the special notation used for Guqin, which is usually handwritten. Based off Noto Sans SC.",
+        "image": "../assets/images/jianzipu.svg",
+        "link": "https://github.com/Adrakaris/guqin-jianzipu-font"
     }
 ]}
