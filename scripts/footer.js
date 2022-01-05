@@ -1,13 +1,13 @@
 "use strict";
 // stored details
-fc = ["© 2021 Yijun Hu, all rights reserved.", "Designed by Yijun Hu"];
+let fc = ["© 2021 Yijun Hu, all rights reserved.", "Designed by Yijun Hu"];
 // code
-var footer = document.querySelector("#genfooter");
-var left = document.createElement("div");
+let footer = document.querySelector("#genfooter");
+let left = document.createElement("div");
 left.innerHTML = `<p class="small">
                             ${fc[0]}
                         </p>`;
-var right = document.createElement("div");
+let right = document.createElement("div");
 right.innerHTML = `<p class="small ra">
                             ${fc[1]}
                         </p>`;
