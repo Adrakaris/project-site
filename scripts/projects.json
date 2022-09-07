@@ -16,23 +16,30 @@
     {
         "title": "Robot Maze",
         "language": "Java",
-        "description": "An AI that solves mazes (CS118 Programming Coursework)",
+        "description": "An AI that solves mazes (Intro to Programming)",
         "image": "../assets/images/robotmaze.png",
         "link": "../robotMaze/"
     },
     {
         "title": "Large Arithmetic Collider",
         "language": "Haskell",
-        "description": "A solver written in Haskell for an arithmetic game (CS141 Functional Programming Coursework)",
+        "description": "A solver written in Haskell for an arithmetic game (Functional Programming)",
         "image": "../assets/images/lac.svg",
         "link": "../lac/"
     },
     {
         "title": "Waffles",
         "language": "Java",
-        "description": "A restaurant review website, with hand-written data structures (CS126 Data Structs & Algorithms Coursework)",
+        "description": "A restaurant review website, with hand-written data structures (Data Structs & Algorithms)",
         "image": "../assets/images/waffles-403.png",
         "link": "../waffles/"
+    },
+    {
+        "title": "An Essay on Facebook Libra",
+        "language": "Essay",
+        "description": "A fairly small essay on the Libra (Diem) Project and its rise and fall. Since the time of writing, Libra has been officially cancelled. (Professional Skills)",
+        "image": "../assets/images/diem-failure.png",
+        "link": "../"
     },
     {
         "title": "Noto Qin Jianzipu",
@@ -40,5 +47,26 @@
         "description": "A font designed to allow typesetting of the special notation used for Guqin, which is usually handwritten. Based off Noto Sans SC.",
         "image": "../assets/images/jianzipu.svg",
         "link": "https://github.com/Adrakaris/guqin-jianzipu-font"
+    },
+    {
+        "title": "Parser",
+        "language": "JavaCC",
+        "description": "A JavaCC parser and interpreter for a simple integer-based programming language. (Formal Languages)",
+        "image": "../assets/images/parser.svg",
+        "link": "../"
+    },
+    {
+        "title": "Resolution.",
+        "language": "Prolog.",
+        "description": "A tautology prover, using the Resolution method, written in a logic-based programming language. (Logic and Verification.)",
+        "image": "../assets/images/resolution.svg",
+        "link": "../"
+    },
+    {
+        "title": "Packet Sniffer",
+        "language": "C",
+        "description": "A multi threaded packet sniffing program, for detecting possible occurences of common attacks. (OS and Networks)",
+        "image": "../assets/images/packetsniffer.svg",
+        "link": "../"
     }
 ]}
