@@ -68,5 +68,12 @@
         "description": "A multi threaded packet sniffing program, for detecting possible occurences of common attacks. (OS and Networks)",
         "image": "../assets/images/packetsniffer.svg",
         "link": "../"
+    },
+    {
+        "title": "Generating Chinese Calligraphy",
+        "language": "Python",
+        "description": "Investigating Techniques to Generate Chinese Calligrphy using generative adversarial networks. Bachelors project.",
+        "image": "../assets/images/calligraphy.png",
+        "link": "https://github.com/Adrakaris/cyclegans"
     }
 ]}
