@@ -75,5 +75,12 @@
         "description": "Investigating Techniques to Generate Chinese Calligrphy using generative adversarial networks. Bachelors project.",
         "image": "../assets/images/calligraphy.png",
         "link": "https://github.com/Adrakaris/cyclegans"
+    },
+    {
+        "title": "Seal Script Recogniser",
+        "language": "Python, Java, C++",
+        "description": "Group project making an application that can detect and translate seal script characters, fully local and real time. Masters project.",
+        "image": "../assets/images/ccp-header.svg",
+        "link": "https://github.com/grifaj/cs409-CCP"
     }
 ]}
